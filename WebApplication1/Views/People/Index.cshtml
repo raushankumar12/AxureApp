@@ -1,0 +1,25 @@
+@model IEnumerable<WebApplication1.Models.Person>
+
+<div class="container mt-4">
+    <h2 class="text-center mb-4">👥 People List</h2>
+
+    <div class="table-responsive">
+        <table class="table table-striped table-hover table-bordered shadow rounded">
+            <thead class="table-dark">
+                <tr>
+                    <th scope="col">👤 Name</th>
+                    <th scope="col">🎂 Age</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var person in Model)
+                {
+                    <tr>
+                        <td>@person.Name</td>
+                        <td>@person.Age</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

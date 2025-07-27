@@ -1,0 +1,45 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="container py-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow-lg border-0 rounded-lg">
+                <div class="card-body text-center bg-light">
+                    <img src="/favicon.ico" alt="Logo" class="mb-4" style="width:64px;">
+                    <h1 class="display-4 mb-3 text-primary">Welcome to ASP.NET Core!</h1>
+                    <p class="lead mb-4">Build modern, fast, and secure web applications with ease.</p>
+                    <a class="btn btn-primary btn-lg px-4" href="https://learn.microsoft.com/aspnet/core" target="_blank">
+                        <i class="bi bi-book"></i> Learn ASP.NET Core
+                    </a>
+                </div>
+            </div>
+            <div class="mt-4 text-center">
+                <span class="badge bg-success fs-5">Powered by .NET 8</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    body {
+        background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+    }
+    .card {
+        background: rgba(255,255,255,0.95);
+    }
+    .btn-primary {
+        background: #007bff;
+        border: none;
+        box-shadow: 0 4px 12px rgba(0,123,255,0.15);
+        transition: background 0.2s;
+    }
+    .btn-primary:hover {
+        background: #0056b3;
+    }
+    .display-4 {
+        font-weight: 700;
+        letter-spacing: 1px;
+    }
+</style>
